@@ -1,0 +1,83 @@
+/* App Container */
+.app-container {
+  text-align: center;
+  background-color: #eef7ff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 250px;
+}
+
+button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+/* Weather Cards */
+.weather-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.weather-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 180px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.weather-card:hover {
+  transform: scale(1.05);
+}
+
+.weather-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.weather-card p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Loading and Error Message */
+.loading, .error {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  margin-top: 10px;
+}
